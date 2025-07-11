@@ -106,3 +106,41 @@ footer {
     padding: 1rem;
   }
 }
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #00bcd4;
+  border: none;
+  color: #121212;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1000;
+}
+body.light-theme {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+body.light-theme h1,
+body.light-theme h2 {
+  color: #0077b6;
+}
+
+body.light-theme .btn {
+  background-color: #0077b6;
+  color: #ffffff;
+}
+
+body.light-theme .skills-list li,
+body.light-theme .project-card,
+body.light-theme footer {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.light-theme a {
+  color: #0077b6;
+}

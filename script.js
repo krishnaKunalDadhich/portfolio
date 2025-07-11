@@ -7,3 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+const toggleBtn = document.getElementById('themeToggle');
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+
+  // Toggle button icon
+  if (document.body.classList.contains('light-theme')) {
+    toggleBtn.textContent = '🌙';
+  } else {
+    toggleBtn.textContent = '☀️';
+  }
+});
