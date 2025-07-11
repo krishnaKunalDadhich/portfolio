@@ -3,6 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #121212;
@@ -60,4 +72,37 @@ footer {
   padding: 1rem;
   background: #1a1a1a;
   color: #aaa;
+}
+.btn.download {
+  background-color: #333;
+  color: #00bcd4;
+  margin-left: 1rem;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+
+  .project-card {
+    padding: 0.8rem;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .container {
+    padding: 1rem;
+  }
 }
