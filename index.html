@@ -32,11 +32,6 @@
         <a href="#projects" class="hover:text-cyan-400">Projects</a>
         <a href="#timeline" class="hover:text-cyan-400">Journey</a>
         <a href="#contact" class="hover:text-cyan-400">Contact</a>
-        <a href="resume.pdf" download
-  class="ml-4 border border-cyan-400 px-4 py-2 rounded-full text-sm hover:bg-cyan-400 hover:text-[#0f172a] transition">
-  📄 Download Resume
-</a>
-
       </div>
       <div class="md:hidden">
         <button id="hamburger" class="text-cyan-400 text-2xl">☰</button>
@@ -51,8 +46,7 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <!-- Hero Section -->
+<!-- Hero Section -->
 <section id="hero" class="h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#0f172a]">
   <div class="z-10 max-w-3xl px-6" data-aos="fade-up">
     <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
@@ -61,10 +55,29 @@
     <p class="mt-4 text-lg md:text-xl text-gray-400">
       Aspiring Software Engineer • IoT & AI Developer • Frontend Enthusiast
     </p>
-    <a href="#contact" class="mt-8 inline-block bg-cyan-400 text-[#0f172a] font-semibold px-6 py-3 rounded-full hover:bg-cyan-300 transition">
-      Let’s Connect →
-    </a>
+
+    <!-- BUTTONS START -->
+    <div class="mt-8 flex flex-wrap justify-center items-center gap-4">
+      <a href="#contact"
+         class="bg-cyan-400 text-[#0f172a] px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition duration-300">
+        Let’s Connect →
+      </a>
+
+      <a href="resume.pdf" download
+         class="flex items-center gap-2 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-[#0f172a] transition duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+             stroke="currentColor" class="w-5 h-5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 16.5V3m0 13.5l-3-3m3 3l3-3M3 21h18" />
+        </svg>
+        Download Resume
+      </a>
+    </div>
+    <!-- BUTTONS END -->
+    
   </div>
+</section>
+
 
   <!-- Background SVG Blob -->
   <div class="absolute top-[-50px] right-[-50px] opacity-20 w-[500px] h-[500px] -z-0">
