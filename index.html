@@ -25,13 +25,18 @@
   <!-- Navbar -->
   <header class="fixed top-0 w-full bg-[#0f172a] z-40 shadow-md">
     <nav class="container mx-auto flex justify-between items-center px-6 py-4">
-      <h1 class="text-xl font-bold text-cyan-400">Krishna</h1>
+      <h1 class="text-xl font-bold text-cyan-400">Krishna Kunal Dadhich</h1>
       <div class="hidden md:flex space-x-6 text-sm">
         <a href="#about" class="hover:text-cyan-400">About</a>
         <a href="#skills" class="hover:text-cyan-400">Skills</a>
         <a href="#projects" class="hover:text-cyan-400">Projects</a>
         <a href="#timeline" class="hover:text-cyan-400">Journey</a>
         <a href="#contact" class="hover:text-cyan-400">Contact</a>
+        <a href="resume.pdf" download
+  class="ml-4 border border-cyan-400 px-4 py-2 rounded-full text-sm hover:bg-cyan-400 hover:text-[#0f172a] transition">
+  📄 Download Resume
+</a>
+
       </div>
       <div class="md:hidden">
         <button id="hamburger" class="text-cyan-400 text-2xl">☰</button>
@@ -281,14 +286,25 @@
 
 
   <!-- Footer -->
-  <footer class="text-center py-6 text-sm bg-[#0f172a] text-gray-500 border-t border-gray-700">
-    <div class="flex justify-center space-x-6 mb-2">
-      <a href="#" class="hover:text-cyan-400">GitHub</a>
-      <a href="#" class="hover:text-cyan-400">LinkedIn</a>
-      <a href="mailto:your@email.com" class="hover:text-cyan-400">Email</a>
-    </div>
-    © 2025 Krishna Kunal Dadhich. All rights reserved.
-  </footer>
+ <!-- Footer Section -->
+<footer class="bg-[#0f172a] text-white py-6 text-center text-sm">
+  <div class="flex justify-center space-x-4 mb-2">
+    <a href="https://github.com/krishnaKunalDadhich" target="_blank" class="hover:text-cyan-400">
+      <i class="fab fa-github text-xl"></i>
+    </a>
+    <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="hover:text-cyan-400">
+      <i class="fab fa-linkedin text-xl"></i>
+    </a>
+    <a href="mailto:youremail@example.com" class="hover:text-cyan-400">
+      <i class="fas fa-envelope text-xl"></i>
+    </a>
+  </div>
+  <p class="text-gray-400">&copy; 2025 Krishna Kunal Dadhich. All rights reserved.</p>
+</footer>
+
+<!-- Add this to <head> for icons support -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
