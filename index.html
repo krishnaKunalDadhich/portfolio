@@ -1,154 +1,193 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Krishna Kunal Dadhich - Developer Portfolio" />
-    <meta name="author" content="Krishna Kunal Dadhich" />
-    <title>Krishna Kunal Dadhich | Portfolio</title>
-    <link rel="icon" href="https://via.placeholder.com/32" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              primary: '#00bcd4',
-              dark: '#0f172a',
-              light: '#f8fafc',
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body class="bg-dark text-white font-sans">
-    <button id="toggleTheme" class="fixed top-4 right-4 bg-primary text-dark px-3 py-1 rounded-full z-50">🌙</button>
 
-    <!-- Navbar -->
-    <header class="fixed top-0 w-full bg-dark z-40 shadow-md">
-      <nav class="container mx-auto flex justify-between items-center py-4 px-4">
-        <h1 class="text-xl font-bold text-primary">Krishna</h1>
-        <div class="hidden md:flex space-x-6 text-sm" id="menu">
-          <a href="#about" class="hover:text-primary">About</a>
-          <a href="#skills" class="hover:text-primary">Skills</a>
-          <a href="#projects" class="hover:text-primary">Projects</a>
-          <a href="#contact" class="hover:text-primary">Contact</a>
-        </div>
-        <div class="md:hidden">
-          <button id="hamburger" class="text-primary text-2xl">&#9776;</button>
-        </div>
-      </nav>
-      <div id="mobileMenu" class="hidden flex flex-col items-center md:hidden bg-dark py-4 space-y-4">
-        <a href="#about" class="hover:text-primary">About</a>
-        <a href="#skills" class="hover:text-primary">Skills</a>
-        <a href="#projects" class="hover:text-primary">Projects</a>
-        <a href="#contact" class="hover:text-primary">Contact</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Kunal Dadhich | Developer Portfolio</title>
+  <meta name="description" content="Portfolio website of Krishna Kunal Dadhich - Developer, Engineer, Tech Enthusiast" />
+  <meta name="author" content="Krishna Kunal Dadhich" />
+  <link rel="icon" href="https://via.placeholder.com/32" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    ::selection {
+      background: #00bcd4;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-[#0f172a] text-white font-sans">
+  <!-- Theme Toggle -->
+  <button id="toggleTheme" class="fixed top-4 right-4 z-50 bg-cyan-400 text-dark px-3 py-1 rounded-full">🌙</button>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-[#0f172a] z-40 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-xl font-bold text-cyan-400">Krishna</h1>
+      <div class="hidden md:flex space-x-6 text-sm">
+        <a href="#about" class="hover:text-cyan-400">About</a>
+        <a href="#skills" class="hover:text-cyan-400">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400">Projects</a>
+        <a href="#timeline" class="hover:text-cyan-400">Journey</a>
+        <a href="#contact" class="hover:text-cyan-400">Contact</a>
       </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="pt-32 pb-20 text-center" data-aos="fade-up">
-      <img src="https://via.placeholder.com/120" alt="Profile" class="mx-auto rounded-full shadow-lg mb-4" />
-      <h2 class="text-3xl font-bold">Hi, I'm Krishna Kunal Dadhich</h2>
-      <p class="mt-2 text-gray-400">Aspiring Developer • Lifelong Learner</p>
-      <div class="mt-4 space-x-4">
-        <a href="#" class="bg-primary text-dark px-4 py-2 rounded hover:opacity-80">Download Resume</a>
-        <a href="#contact" class="border border-primary px-4 py-2 rounded hover:bg-primary hover:text-dark">Contact Me</a>
+      <div class="md:hidden">
+        <button id="hamburger" class="text-cyan-400 text-2xl">☰</button>
       </div>
-    </section>
+    </nav>
+    <div id="mobileMenu" class="hidden flex-col items-center md:hidden bg-[#0f172a] py-4 space-y-4">
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#timeline" class="hover:text-cyan-400">Journey</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+    </div>
+  </header>
 
-    <!-- About -->
-    <section id="about" class="py-20 container mx-auto px-4" data-aos="fade-up" data-aos-duration="1000">
-      <h3 class="text-2xl font-semibold mb-4 border-b border-primary w-max">About Me</h3>
-      <p class="text-gray-300 leading-relaxed">
-        I'm a tech enthusiast and self-driven student who enjoys building AI & web-based systems that solve
-        real-world problems. Currently exploring full-stack and ML projects.
-      </p>
-    </section>
+  <!-- Hero Section -->
+  <!-- Hero Section -->
+<section id="hero" class="h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#0f172a]">
+  <div class="z-10 max-w-3xl px-6" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
+      Hi, I'm Krishna Kunal Dadhich
+    </h1>
+    <p class="mt-4 text-lg md:text-xl text-gray-400">
+      Aspiring Software Engineer • IoT & AI Developer • Frontend Enthusiast
+    </p>
+    <a href="#contact" class="mt-8 inline-block bg-cyan-400 text-[#0f172a] font-semibold px-6 py-3 rounded-full hover:bg-cyan-300 transition">
+      Let’s Connect →
+    </a>
+  </div>
 
-    <!-- Skills -->
-    <section id="skills" class="py-20 bg-gray-900" data-aos="zoom-in" data-aos-delay="200">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-6 border-b border-primary w-max">Skills</h3>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">HTML</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">CSS</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">JavaScript</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">Python</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">C++</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">Firebase</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">ESP32</span>
-          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">Git & GitHub</span>
-        </div>
+  <!-- Background SVG Blob -->
+  <div class="absolute top-[-50px] right-[-50px] opacity-20 w-[500px] h-[500px] -z-0">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#00bcd4" d="M41.1,-70.5C52.4,-60.5,61.2,-52,69.3,-41.1C77.4,-30.2,84.8,-16.9,81.8,-5C78.8,6.9,65.4,17.5,55.5,27.4C45.5,37.3,39,46.4,30.5,56.4C22,66.4,11,77.3,-0.5,78.1C-12.1,79,-24.1,69.7,-31.4,59.2C-38.7,48.7,-41.4,37,-51.5,26.4C-61.5,15.7,-79,6.1,-80.2,-4.5C-81.3,-15.1,-66.2,-26.8,-54.9,-37.6C-43.5,-48.4,-35.9,-58.2,-25.5,-68.3C-15,-78.3,-2.5,-88.6,9.1,-91.3C20.7,-94,41.4,-89.4,41.1,-70.5Z" transform="translate(100 100)" />
+    </svg>
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-[#1e293b]" data-aos="fade-up">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <img src="https://via.placeholder.com/180" class="rounded-full shadow-lg w-48 h-48" alt="avatar" />
+      <div>
+        <h3 class="text-2xl font-bold text-cyan-400 mb-4">About Me</h3>
+        <p class="text-gray-300 leading-relaxed">
+          I'm a curious tech explorer who loves building innovative things using AI, ML, IoT, and modern web tech. I enjoy solving real-world problems using code.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects" class="py-20 container mx-auto px-4" data-aos="fade-up">
-      <h3 class="text-2xl font-semibold mb-6 border-b border-primary w-max">Projects</h3>
+  <!-- Skills Section -->
+  <section id="skills" class="py-20" data-aos="zoom-in">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold text-cyan-400 mb-6">Skills</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">HTML</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">CSS</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">JavaScript</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">Python</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">Firebase</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">C++</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">Tailwind</div>
+        <div class="bg-[#1e293b] hover:scale-105 transition rounded-lg p-4 text-center shadow-md">Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-[#1e293b]" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold text-cyan-400 mb-6">Projects</h3>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-800 p-6 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="300">
-          <img src="https://via.placeholder.com/600x300" class="rounded mb-4" alt="Project 1" />
-          <h4 class="text-xl font-bold text-primary">Project Title 1</h4>
-          <p class="text-gray-300 mt-2">Short description of the project. Tech used, goal, etc.</p>
-          <div class="mt-4 space-x-3">
-            <a href="#" class="text-primary underline">GitHub</a>
-            <a href="#" class="text-primary underline">Live Demo</a>
+        <div class="bg-white/10 backdrop-blur rounded-lg shadow-xl overflow-hidden hover:scale-[1.02] transition">
+          <img src="https://via.placeholder.com/600x300" class="w-full" alt="project" />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold text-cyan-300">AI Resume Analyzer</h4>
+            <p class="text-gray-300 text-sm mt-2">Upload a resume, match it against job description using NLP + ML.</p>
+            <div class="mt-2 text-sm text-cyan-400 space-x-2">
+              <span>#Python</span> <span>#Flask</span> <span>#AI</span>
+            </div>
           </div>
         </div>
-        <div class="bg-gray-800 p-6 rounded shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="400">
-          <img src="https://via.placeholder.com/600x300" class="rounded mb-4" alt="Project 2" />
-          <h4 class="text-xl font-bold text-primary">Project Title 2</h4>
-          <p class="text-gray-300 mt-2">Another placeholder project. Replace with your real project.</p>
-          <div class="mt-4 space-x-3">
-            <a href="#" class="text-primary underline">GitHub</a>
-            <a href="#" class="text-primary underline">Live Demo</a>
+        <div class="bg-white/10 backdrop-blur rounded-lg shadow-xl overflow-hidden hover:scale-[1.02] transition">
+          <img src="https://via.placeholder.com/600x300" class="w-full" alt="project" />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold text-cyan-300">Smart Water Quality Monitor</h4>
+            <p class="text-gray-300 text-sm mt-2">ESP32 + Sensors + Firebase + AI Classification model</p>
+            <div class="mt-2 text-sm text-cyan-400 space-x-2">
+              <span>#IoT</span> <span>#Firebase</span> <span>#ML</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Form -->
-    <section id="contact" class="py-20 bg-gray-900" data-aos="fade-up" data-aos-duration="1200">
-      <div class="container mx-auto px-4">
-        <h3 class="text-2xl font-semibold mb-6 border-b border-primary w-max">Contact</h3>
-        <form action="https://formspree.io/f/xqkrvnzg" method="POST" class="space-y-4 max-w-xl">
-          <input type="text" name="name" required placeholder="Your Name" class="w-full px-4 py-2 rounded bg-dark border border-gray-700 text-white" />
-          <input type="email" name="email" required placeholder="Your Email" class="w-full px-4 py-2 rounded bg-dark border border-gray-700 text-white" />
-          <textarea name="message" required placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded bg-dark border border-gray-700 text-white"></textarea>
-          <button type="submit" class="bg-primary text-dark px-4 py-2 rounded hover:opacity-80">Send Message</button>
-        </form>
+  <!-- Timeline Section -->
+  <section id="timeline" class="py-20" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold text-cyan-400 mb-6">My Journey</h3>
+      <div class="border-l-4 border-cyan-400 pl-6 space-y-6">
+        <div>
+          <h4 class="text-lg font-semibold text-cyan-300">2023 – Started CSE</h4>
+          <p class="text-gray-400 text-sm">Began my Computer Science journey with strong fundamentals in programming and electronics.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-cyan-300">2024 – First Hackathon + IoT Project</h4>
+          <p class="text-gray-400 text-sm">Built an AI-based water quality monitor with Firebase and ESP32.</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold text-cyan-300">2025 – Building Real Projects</h4>
+          <p class="text-gray-400 text-sm">Working on AI-powered resume analyzer, interview prep tools and full-stack dashboard.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-center py-6 text-sm bg-dark text-gray-500 border-t border-gray-700">
-      <div class="flex justify-center space-x-4 mb-2">
-        <a href="#" class="hover:text-primary">GitHub</a>
-        <a href="#" class="hover:text-primary">LinkedIn</a>
-        <a href="mailto:your@email.com" class="hover:text-primary">Email</a>
-      </div>
-      © 2025 Krishna Kunal Dadhich. All rights reserved.
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-[#1e293b]" data-aos="fade-up">
+    <div class="container mx-auto px-6">
+      <h3 class="text-2xl font-bold text-cyan-400 mb-6">Contact Me</h3>
+      <form action="https://formspree.io/f/xqkrvnzg" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input name="name" required type="text" placeholder="Your Name" class="bg-dark border border-gray-600 p-3 rounded" />
+        <input name="email" required type="email" placeholder="Your Email" class="bg-dark border border-gray-600 p-3 rounded" />
+        <textarea name="message" required rows="5" placeholder="Your Message" class="bg-dark border border-gray-600 p-3 rounded md:col-span-2"></textarea>
+        <button type="submit" class="bg-cyan-400 text-dark px-6 py-2 rounded-full hover:opacity-90 transition md:col-span-2">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm bg-[#0f172a] text-gray-500 border-t border-gray-700">
+    <div class="flex justify-center space-x-6 mb-2">
+      <a href="#" class="hover:text-cyan-400">GitHub</a>
+      <a href="#" class="hover:text-cyan-400">LinkedIn</a>
+      <a href="mailto:your@email.com" class="hover:text-cyan-400">Email</a>
+    </div>
+    © 2025 Krishna Kunal Dadhich. All rights reserved.
+  </footer>
 
-      const btn = document.getElementById('toggleTheme');
-      btn.addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-        btn.textContent = document.body.classList.contains('dark') ? '🌙' : '☀️';
-      });
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+    window.addEventListener('load', AOS.refresh);
 
-      const hamburger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
-      hamburger.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    </script>
-  </body>
+    document.getElementById('toggleTheme').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
 </html>
