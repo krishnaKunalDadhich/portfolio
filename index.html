@@ -1,96 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Krishna Kunal Dadhich | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <meta name="description" content="Portfolio of Krishna Kunal Dadhich - Developer, Learner, and Builder." />
-  <meta name="keywords" content="Krishna Kunal Dadhich, portfolio, developer, resume, projects">
-  <meta name="author" content="Krishna Kunal Dadhich">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna Kunal Dadhich | Portfolio</title>
+    <link rel="icon" href="https://via.placeholder.com/32" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#00bcd4',
+              dark: '#0f172a',
+              light: '#f8fafc'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-dark text-white font-sans">
+    <!-- 🌗 Theme Toggle -->
+    <button id="toggleTheme" class="fixed top-4 right-4 bg-primary text-dark px-3 py-1 rounded-full z-50">
+      🌙
+    </button>
 
-</head>
-<body>
-    <button id="themeToggle" class="theme-toggle">🌙</button>
+    <!-- 🔝 Navbar -->
+    <header class="fixed top-0 w-full bg-dark z-40 shadow-md">
+      <nav class="container mx-auto flex justify-between items-center py-4 px-4">
+        <h1 class="text-xl font-bold text-primary">Krishna Kunal Dadhich</h1>
+        <ul class="flex space-x-6 text-sm">
+          <li><a href="#about" class="hover:text-primary">About</a></li>
+          <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+          <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+          <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <!-- 🦸‍♂️ Hero Section -->
+    <section class="pt-28 pb-20 text-center">
+      <img src="https://via.placeholder.com/120" alt="Profile" class="mx-auto rounded-full shadow-lg mb-4" />
+      <h2 class="text-3xl font-bold">Hi, I'm Krishna Kunal Dadhich</h2>
+      <p class="mt-2 text-gray-400">Aspiring Developer • Lifelong Learner</p>
+      <div class="mt-4 space-x-4">
+        <a href="#" class="bg-primary text-dark px-4 py-2 rounded hover:opacity-80">Download Resume</a>
+        <a href="#contact" class="border border-primary px-4 py-2 rounded hover:bg-primary hover:text-dark">Contact Me</a>
+      </div>
+    </section>
 
-  <!-- 🌟 HERO SECTION -->
-  <section id="hero" class="fade-in">
-    <div class="container">
-      <h1>Hello, I'm <span>Krishna Kunal Dadhich</span></h1>
-      <p>A passionate Developer & Learner</p>
-      <a href="#contact" class="btn">Contact Me</a>
-      <a href="resume.pdf" class="btn download" download>Download Resume</a>
-
-    </div>
-  </section>
-
-  <!-- 👨‍💻 ABOUT SECTION -->
-  <section id="about" class="fade-in">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Science Engineering student focused on building impactful tech solutions.
-        I enjoy working on AI, web development, and smart system projects.
+    <!-- 👨‍💻 About -->
+    <section id="about" class="py-20 container mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-4 border-b border-primary w-max">About Me</h3>
+      <p class="text-gray-300 leading-relaxed">
+        I'm a tech enthusiast and self-driven student who enjoys building AI & web-based systems that solve real-world
+        problems. Currently exploring full-stack and ML projects.
       </p>
-    </div>
-  </section>
+    </section>
 
-  <!-- 🧠 SKILLS SECTION -->
-  <section id="skills" class="fade-in">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>C++</li>
-        <li>Firebase</li>
-        <li>ESP32</li>
-        <li>Git & GitHub</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 💼 PROJECTS SECTION -->
-  <section id="projects" class="fade-in">
-    <div class="container">
-      <h2>Projects</h2>
-
-      <div class="project-card">
-        <h3>Smart Water Quality Monitoring System</h3>
-        <p>ESP32 + Firebase + AI model to classify water quality in real-time.</p>
-        <a href="https://github.com/krishnadadhich/water-quality-monitor" target="_blank">View Project</a>
+    <!-- 🧠 Skills -->
+    <section id="skills" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-6 border-b border-primary w-max">Skills</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">HTML</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">CSS</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">JavaScript</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">Python</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">C++</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">Firebase</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">ESP32</span>
+          <span class="bg-dark border border-primary rounded px-3 py-2 text-center">Git & GitHub</span>
+        </div>
       </div>
+    </section>
 
-      <div class="project-card">
-        <h3>AI Resume Analyzer</h3>
-        <p>Matches uploaded resumes with job roles using NLP & scoring logic.</p>
-        <a href="https://github.com/krishnadadhich/ai-resume-analyzer" target="_blank">View Project</a>
+    <!-- 💼 Projects -->
+    <section id="projects" class="py-20 container mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6 border-b border-primary w-max">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Placeholder Project -->
+        <div class="bg-gray-800 p-6 rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-primary">Project Title 1</h4>
+          <p class="text-gray-300 mt-2">Short description of the project. Tech used, goal, etc.</p>
+          <a href="#" class="inline-block mt-4 text-primary hover:underline">View Project →</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-bold text-primary">Project Title 2</h4>
+          <p class="text-gray-300 mt-2">Another placeholder project. Replace with your real project.</p>
+          <a href="#" class="inline-block mt-4 text-primary hover:underline">View Project →</a>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- 📬 Contact -->
+    <section id="contact" class="py-20 bg-gray-900">
+      <div class="container mx-auto px-4">
+        <h3 class="text-2xl font-semibold mb-6 border-b border-primary w-max">Contact</h3>
+        <p>Email: <a href="#" class="text-primary">your@email.com</a></p>
+        <p>GitHub: <a href="#" class="text-primary">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="#" class="text-primary">linkedin.com/in/yourname</a></p>
+      </div>
+    </section>
 
-  <!-- 📬 CONTACT SECTION -->
-  <section id="contact" class="fade-in">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:krishna@example.com">krishna@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/krishnadadhich" target="_blank">linkedin.com/in/krishnadadhich</a></p>
-      <p>GitHub: <a href="https://github.com/krishnadadhich" target="_blank">github.com/krishnadadhich</a></p>
-    </div>
-  </section>
+    <!-- 🧼 Footer -->
+    <footer class="text-center py-6 text-sm bg-dark text-gray-500 border-t border-gray-700">
+      © 2025 Krishna Kunal Dadhich. All rights reserved.
+    </footer>
 
-  <!-- 📎 FOOTER -->
-  <footer>
-    <div class="container">
-      <p>© 2025 Krishna Kunal Dadhich. All rights reserved.</p>
-    </div>
-  </footer>
-    <!-- 📜 SCRIPTS -->
-    <script src="script.js"></script>
-</body>
+    <script>
+      const btn = document.getElementById('toggleTheme');
+      btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+        btn.textContent = document.body.classList.contains('dark') ? '🌙' : '☀️';
+      });
+    </script>
+  </body>
 </html>
