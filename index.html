@@ -7,7 +7,14 @@
   <title>Krishna Kunal Dadhich | Developer Portfolio</title>
   <meta name="description" content="Portfolio website of Krishna Kunal Dadhich - Developer, Engineer, Tech Enthusiast" />
   <meta name="author" content="Krishna Kunal Dadhich" />
-  <link rel="icon" href="https://via.placeholder.com/32" />
+  <!-- Inside <head> -->
+    <meta property="og:title" content="Krishna Kunal Dadhich | Developer Portfolio" />
+    <meta property="og:description" content="Aspiring Software Engineer | AI & IoT Developer | Frontend Enthusiast" />
+    <meta property="og:image" content="https://placehold.co/600x300" />
+    <meta property="og:url" content="https://your-portfolio-link.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="https://placehold.co/32x32" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
@@ -19,8 +26,6 @@
 </head>
 
 <body class="bg-[#0f172a] text-white font-sans">
-  <!-- Theme Toggle -->
-  <button id="toggleTheme" class="fixed top-4 right-4 z-50 bg-cyan-400 text-dark px-3 py-1 rounded-full">🌙</button>
 
   <!-- Navbar -->
   <header class="fixed top-0 w-full bg-[#0f172a] z-40 shadow-md">
@@ -38,139 +43,122 @@
       </div>
     </nav>
     <div id="mobileMenu" class="hidden flex-col items-center md:hidden bg-[#0f172a] py-4 space-y-4">
-      <a href="#about" class="hover:text-cyan-400">About</a>
-      <a href="#skills" class="hover:text-cyan-400">Skills</a>
-      <a href="#projects" class="hover:text-cyan-400">Projects</a>
-      <a href="#timeline" class="hover:text-cyan-400">Journey</a>
-      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+      <a href="#about" class="hover:text-cyan-400 py-2">About</a>
+      <a href="#skills" class="hover:text-cyan-400 py-2">Skills</a>
+      <a href="#projects" class="hover:text-cyan-400 py-2">Projects</a>
+      <a href="#timeline" class="hover:text-cyan-400 py-2">Journey</a>
+      <a href="#contact" class="hover:text-cyan-400 py-2">Contact</a>
     </div>
   </header>
 
-<!-- Hero Section -->
-<section id="hero" class="h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#0f172a]">
-  <div class="z-10 max-w-3xl px-6" data-aos="fade-up">
-    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
-      Hi, I'm Krishna Kunal Dadhich
-    </h1>
-    <p class="mt-4 text-lg md:text-xl text-gray-400">
-      Aspiring Software Engineer • IoT & AI Developer • Frontend Enthusiast
-    </p>
-
-    <!-- BUTTONS START -->
-    <div class="mt-8 flex flex-wrap justify-center items-center gap-4">
-      <a href="#contact"
-         class="bg-cyan-400 text-[#0f172a] px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition duration-300">
-        Let’s Connect →
-      </a>
-
-      <a href="resume.pdf" download
-         class="flex items-center gap-2 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-[#0f172a] transition duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-             stroke="currentColor" class="w-5 h-5">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                d="M12 16.5V3m0 13.5l-3-3m3 3l3-3M3 21h18" />
-        </svg>
-        Download Resume
-      </a>
-    </div>
-    <!-- BUTTONS END -->
-    
-  </div>
-</section>
-
-
-  <!-- Background SVG Blob -->
-  <div class="absolute top-[-50px] right-[-50px] opacity-20 w-[500px] h-[500px] -z-0">
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-      <path fill="#00bcd4" d="M41.1,-70.5C52.4,-60.5,61.2,-52,69.3,-41.1C77.4,-30.2,84.8,-16.9,81.8,-5C78.8,6.9,65.4,17.5,55.5,27.4C45.5,37.3,39,46.4,30.5,56.4C22,66.4,11,77.3,-0.5,78.1C-12.1,79,-24.1,69.7,-31.4,59.2C-38.7,48.7,-41.4,37,-51.5,26.4C-61.5,15.7,-79,6.1,-80.2,-4.5C-81.3,-15.1,-66.2,-26.8,-54.9,-37.6C-43.5,-48.4,-35.9,-58.2,-25.5,-68.3C-15,-78.3,-2.5,-88.6,9.1,-91.3C20.7,-94,41.4,-89.4,41.1,-70.5Z" transform="translate(100 100)" />
-    </svg>
-  </div>
-</section>
-
-
-<!-- About Section -->
-<section id="about" class="py-20 bg-[#1e293b] text-white">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
-    
-    <!-- Avatar -->
-    <div class="flex-shrink-0">
-      <img src="https://via.placeholder.com/180" alt="Krishna Avatar" class="rounded-full w-44 h-44 object-cover shadow-lg">
-    </div>
-
-    <!-- About Text -->
-    <div>
-      <h2 class="text-3xl font-bold text-cyan-400 mb-4">About Me</h2>
-      <p class="text-gray-300 leading-relaxed max-w-2xl">
-        I'm <span class="text-cyan-300 font-medium">Krishna Kunal Dadhich</span>, a passionate and curious tech enthusiast who loves solving real-world problems using
-        <span class="text-cyan-300 font-medium">AI</span>, <span class="text-cyan-300 font-medium">IoT</span>, and <span class="text-cyan-300 font-medium">modern web technologies</span>.
-        Currently pursuing my B.Tech in CSE, I'm building innovative projects and preparing for high-impact tech roles.
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#0f172a]">
+    <div class="z-10 max-w-3xl px-6" data-aos="fade-up">
+      <h1 class="text-4xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 " >
+        Hi, I'm Krishna Kunal Dadhich
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-400">
+        Aspiring Software Engineer • IoT & AI Developer • Frontend Enthusiast
       </p>
-    </div>
-  </div>
-</section>
 
- <!-- Skills Section -->
-<section id="skills" class="py-20 bg-[#0f172a] text-white">
-  <div class="container mx-auto px-6" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">My Skills</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
-      
-      <!-- Skill Card -->
+      <!-- Buttons -->
+      <div class="mt-8 flex flex-wrap justify-center items-center gap-4">
+        <a href="#contact" class="bg-cyan-400 text-[#0f172a] px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition duration-300">
+          Let’s Connect →
+        </a>
+        <a href="resume.pdf" download class="flex items-center gap-2 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-[#0f172a] transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 16.5V3m0 13.5l-3-3m3 3l3-3M3 21h18" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Background SVG Blob -->
+    <div class="absolute top-[-50px] right-[-50px] opacity-20 w-[500px] h-[500px] -z-0">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#00bcd4" d="M41.1,-70.5C52.4,-60.5,61.2,-52,69.3,-41.1C77.4,-30.2,84.8,-16.9,81.8,-5C78.8,6.9,65.4,17.5,55.5,27.4C45.5,37.3,39,46.4,30.5,56.4C22,66.4,11,77.3,-0.5,78.1C-12.1,79,-24.1,69.7,-31.4,59.2C-38.7,48.7,-41.4,37,-51.5,26.4C-61.5,15.7,-79,6.1,-80.2,-4.5C-81.3,-15.1,-66.2,-26.8,-54.9,-37.6C-43.5,-48.4,-35.9,-58.2,-25.5,-68.3C-15,-78.3,-2.5,-88.6,9.1,-91.3C20.7,-94,41.4,-89.4,41.1,-70.5Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-[#1e293b] text-white">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+      <div class="flex-shrink-0">
+        <img src="https://placehold.co/180x180?text=Avatar" alt="Krishna Avatar" class="rounded-full w-44 h-44 object-cover shadow-lg">
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold text-cyan-400 mb-4">About Me</h2>
+        <p class="text-gray-300 leading-relaxed max-w-2xl">
+          I'm <span class="text-cyan-300 font-medium">Krishna Kunal Dadhich</span>, a passionate and curious tech enthusiast who loves solving real-world problems using
+          <span class="text-cyan-300 font-medium">AI</span>, <span class="text-cyan-300 font-medium">IoT</span>, and <span class="text-cyan-300 font-medium">modern web technologies</span>.
+          Currently pursuing my B.Tech in CSE, I'm building innovative projects and preparing for high-impact tech roles.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-[#0f172a] text-white">
+    <div class="container mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">My Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center px-2 sm:px-0">
+        <!-- Skill Cards -->
+        <!-- Skill Card -->
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">HTML</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">CSS</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy" />
         <p class="text-sm mt-2">JavaScript</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">Python</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">Firebase</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">C++</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">Tailwind CSS</p>
       </div>
 
       <div class="bg-[#1e293b] rounded-xl py-6 px-4 hover:scale-105 transition shadow-md">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-10 h-10 mx-auto mb-2" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="w-10 h-10 mx-auto mb-2" loading="lazy"/>
         <p class="text-sm mt-2">GitHub</p>
       </div>
-
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- Projects Section -->
-  <!-- Projects Section -->
-<section id="projects" class="py-20 bg-[#1e293b] text-white">
-  <div class="container mx-auto px-6" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">Projects</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      
-      <!-- Project Card -->
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-[#1e293b] text-white">
+    <div class="container mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Replace image URLs with better placeholder -->
+         <!-- Project Card -->
       <div class="bg-white/10 backdrop-blur rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition">
-        <img src="https://via.placeholder.com/600x300" alt="AI Resume Analyzer" class="w-full object-cover">
+        <img src="https://via.placeholder.com/600x300" alt="AI Resume Analyzer" class="w-full object-cover" loading="lazy">
         <div class="p-5">
           <h3 class="text-xl font-semibold text-cyan-300">AI Resume Analyzer</h3>
           <p class="text-gray-300 text-sm mt-2">
@@ -188,7 +176,7 @@
 
       <!-- Project Card 2 -->
       <div class="bg-white/10 backdrop-blur rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition">
-        <img src="https://via.placeholder.com/600x300" alt="Smart Water Monitor" class="w-full object-cover">
+        <img src="https://via.placeholder.com/600x300" alt="Smart Water Monitor" class="w-full object-cover" loading="lazy">
         <div class="p-5">
           <h3 class="text-xl font-semibold text-cyan-300">Smart Water Quality Monitor</h3>
           <p class="text-gray-300 text-sm mt-2">
@@ -203,21 +191,18 @@
           </div>
         </div>
       </div>
-
+        <!-- Project cards remain same structure -->
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- Timeline Section -->
-  <!-- Timeline Section -->
-<section id="timeline" class="py-20 bg-[#0f172a] text-white">
-  <div class="container mx-auto px-6" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">My Journey</h2>
-
-    <div class="relative border-l-4 border-cyan-400 pl-6 space-y-10">
-      
-      <!-- Timeline Item -->
+  <!-- Timeline -->
+  <section id="timeline" class="py-20 bg-[#0f172a] text-white">
+    <div class="container mx-auto px-6" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">My Journey</h2>
+      <div class="relative border-l-4 border-cyan-400 pl-6 space-y-10">
+        <!-- Timeline Items... same -->
+         <!-- Timeline Item -->
       <div>
         <span class="text-sm text-cyan-300 font-semibold">2022 – Started CSE</span>
         <h3 class="text-lg font-bold">My Tech Journey Begins</h3>
@@ -252,20 +237,17 @@
           Launched personal website, actively contributing to open source and hackathons.
         </p>
       </div>
-
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Contact Section -->
-<!-- Contact Section -->
-<section id="contact" class="py-20 bg-[#1e293b] text-white">
-  <div class="container mx-auto px-6 max-w-2xl" data-aos="fade-up">
-    <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">Contact Me</h2>
-    
-    <form action="https://formspree.io/f/mqabrgrv" method="POST" class="space-y-6">
-      
-      <!-- Name -->
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-[#1e293b] text-white">
+    <div class="container mx-auto px-6 max-w-2xl" data-aos="fade-up">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-10 text-center">Contact Me</h2>
+      <form action="https://formspree.io/f/mqabrgrv" method="POST" class="space-y-6">
+        <!-- Name, Email, Message -->
+         <!-- Name -->
       <div>
         <label class="block mb-2 text-sm">Your Name</label>
         <input type="text" name="name" required placeholder="Enter your name"
@@ -293,40 +275,32 @@
           Send Message
         </button>
       </div>
-    </form>
-  </div>
-</section>
-
+        <!-- Submit button -->
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
- <!-- Footer Section -->
-<footer class="bg-[#0f172a] text-white py-6 text-center text-sm">
-  <div class="flex justify-center space-x-4 mb-2">
-    <a href="https://github.com/krishnaKunalDadhich" target="_blank" class="hover:text-cyan-400">
-      <i class="fab fa-github text-xl"></i>
-    </a>
-    <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank" class="hover:text-cyan-400">
-      <i class="fab fa-linkedin text-xl"></i>
-    </a>
-    <a href="mailto:youremail@example.com" class="hover:text-cyan-400">
-      <i class="fas fa-envelope text-xl"></i>
-    </a>
-  </div>
-  <p class="text-gray-400">&copy; 2025 Krishna Kunal Dadhich. All rights reserved.</p>
-</footer>
+  <footer class="bg-[#0f172a] text-white py-6 text-center text-sm">
+    <div class="flex justify-center space-x-4 mb-2">
+      <a href="https://github.com/krishnaKunalDadhich" target="_blank" aria-label="GitHub" class="hover:text-cyan-400">
+        <i class="fab fa-github text-xl"></i>
+      </a>
+      <a href="https://linkedin.com/in/krishnaKunalDadhich" target="_blank" aria-label="LinkedIn" class="hover:text-cyan-400">
+        <i class="fab fa-linkedin text-xl"></i>
+      </a>
+      <a href="mailto:krishnadadhich@example.com" aria-label="Email" class="hover:text-cyan-400">
+        <i class="fas fa-envelope text-xl"></i>
+      </a>
+    </div>
+    <p class="text-gray-400">&copy; 2025 Krishna Kunal Dadhich. All rights reserved.</p>
+  </footer>
 
-<!-- Add this to <head> for icons support -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-
+  <!-- External JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: true });
     window.addEventListener('load', AOS.refresh);
-
-    document.getElementById('toggleTheme').addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
 
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -334,6 +308,14 @@
       mobileMenu.classList.toggle('hidden');
     });
   </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Scroll-to-Top Button -->
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+  class="fixed bottom-5 right-5 bg-cyan-400 text-[#0f172a] p-3 rounded-full shadow-md hover:bg-cyan-300 transition z-50"
+  aria-label="Scroll to top">
+  ↑
+</button>
+
 </body>
 
 </html>
