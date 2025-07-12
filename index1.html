@@ -11,10 +11,9 @@
   <meta property="og:image" content="https://krishnakunaldadhich.github.io/portfolio/preview-image.png" />
   <meta property="og:url" content="https://krishnakunaldadhich.github.io/portfolio/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="favicon.png" type="image/png" />
+
   <link rel="icon" href="https://placehold.co/32x32" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     ::selection {
@@ -51,41 +50,36 @@
   </header>
 
   <!-- Hero Section -->
-  <!-- Hero Section -->
-<section id="hero" class="min-h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#0f172a] pt-24 px-4 md:pt-36">
-  <div class="z-10 max-w-3xl w-full" data-aos="fade-up">
-    <h1 class="text-4xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500">
-      Hi, I'm Krishna Kunal Dadhich
-    </h1>
-    <p class="mt-4 text-lg md:text-xl text-gray-400">
-      Aspiring Software Engineer • IoT & AI Developer • Frontend Enthusiast
-    </p>
+  <section id="hero" class="h-screen flex items-center justify-center text-center relative overflow-hidden bg-[#0f172a]">
+    <div class="z-10 max-w-3xl px-6" data-aos="fade-up">
+      <h1 class="text-4xl sm:text-4xl md:text-6xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 " >
+        Hi, I'm Krishna Kunal Dadhich
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-400">
+        Aspiring Software Engineer • IoT & AI Developer • Frontend Enthusiast
+      </p>
 
-    <!-- CTA Buttons -->
-    <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
-      <a href="#contact"
-         class="w-full sm:w-auto text-center bg-cyan-400 text-[#0f172a] px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition duration-300 shadow-lg">
-         Let’s Connect →
-      </a>
-      <a href="resume.pdf" download
-         class="w-full sm:w-auto text-center flex items-center justify-center gap-2 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-[#0f172a] transition duration-300 shadow-lg">
-         <i class="fas fa-download"></i> View Resume
-      </a>
-      <a href="mailto:krishnakunaldadhich@gmail.com"
-         class="w-full sm:w-auto text-center flex items-center justify-center gap-2 border border-white/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition duration-300 shadow">
-         <i class="fas fa-briefcase"></i> Hire Me
-      </a>
+      <!-- Buttons -->
+      <div class="mt-8 flex flex-wrap justify-center items-center gap-4">
+        <a href="#contact" class="bg-cyan-400 text-[#0f172a] px-6 py-3 rounded-full font-semibold hover:bg-cyan-300 transition duration-300">
+          Let’s Connect →
+        </a>
+        <a href="resume.pdf" download class="flex items-center gap-2 border border-cyan-400 text-cyan-400 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-[#0f172a] transition duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 16.5V3m0 13.5l-3-3m3 3l3-3M3 21h18" />
+          </svg>
+          Download Resume
+        </a>
+      </div>
     </div>
-  </div>
 
-  <!-- Background SVG Blob -->
-  <div class="absolute top-[-50px] right-[-50px] opacity-20 w-[500px] h-[500px] -z-0">
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-      <path fill="#00bcd4" d="M41.1,-70.5C52.4,-60.5,61.2,-52,69.3,-41.1C77.4,-30.2,84.8,-16.9,81.8,-5C78.8,6.9,65.4,17.5,55.5,27.4C45.5,37.3,39,46.4,30.5,56.4C22,66.4,11,77.3,-0.5,78.1C-12.1,79,-24.1,69.7,-31.4,59.2C-38.7,48.7,-41.4,37,-51.5,26.4C-61.5,15.7,-79,6.1,-80.2,-4.5C-81.3,-15.1,-66.2,-26.8,-54.9,-37.6C-43.5,-48.4,-35.9,-58.2,-25.5,-68.3C-15,-78.3,-2.5,-88.6,9.1,-91.3C20.7,-94,41.4,-89.4,41.1,-70.5Z" transform="translate(100 100)" />
-    </svg>
-  </div>
-</section>
-
+    <!-- Background SVG Blob -->
+    <div class="absolute top-[-50px] right-[-50px] opacity-20 w-[500px] h-[500px] -z-0">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#00bcd4" d="M41.1,-70.5C52.4,-60.5,61.2,-52,69.3,-41.1C77.4,-30.2,84.8,-16.9,81.8,-5C78.8,6.9,65.4,17.5,55.5,27.4C45.5,37.3,39,46.4,30.5,56.4C22,66.4,11,77.3,-0.5,78.1C-12.1,79,-24.1,69.7,-31.4,59.2C-38.7,48.7,-41.4,37,-51.5,26.4C-61.5,15.7,-79,6.1,-80.2,-4.5C-81.3,-15.1,-66.2,-26.8,-54.9,-37.6C-43.5,-48.4,-35.9,-58.2,-25.5,-68.3C-15,-78.3,-2.5,-88.6,9.1,-91.3C20.7,-94,41.4,-89.4,41.1,-70.5Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+  </section>
 
   <!-- About -->
   <section id="about" class="py-20 bg-[#1e293b] text-white">
